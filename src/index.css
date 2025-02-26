@@ -137,6 +137,7 @@ select {
   background-color: #213547;
   text-align: center;
   width: 400px;
+  padding: 5px;
 }
 
 label {
@@ -155,14 +156,14 @@ label {
 
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   margin-top: 20px;
-  color: #333;
+  color: #213547;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #7aafbd;
 }
 
@@ -171,4 +172,116 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .currency {
+    width: 275px;
+  }
+
+  .currency:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgb(43, 143, 150));
+    cursor: default;
+  }
+
+  .container {
+    padding: 1rem;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  h1 span {
+    font-size: 1.3em;
+    animation: bounce 1s ease-in-out infinite;
+  }
+
+  input,
+  select {
+    font-size: 1rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #213547;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+    padding: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #fff;
+    text-align-last: center;
+  }
+
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+    display: block;
+    background-color: #7aafbd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+  
+  }
+
+  button {
+    width: 100%;
+    padding: 1em;
+    font-size: 1.2em;
+  }
+
+  canvas {
+    margin-top: 20px;
+  }
+
+  .currency {
+    margin-bottom: 20px;
+  }
+
+
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-top: 20px;
+    color: #213547;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #7aafbd;
+  }
+  
+  .chart-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
